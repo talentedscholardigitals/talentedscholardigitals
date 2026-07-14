@@ -320,6 +320,63 @@ footer{background-color:#1b1512;background-image:var(--watermark-dark);backgroun
   .reveal-l,.reveal-r{transform:translateY(20px);}
   .reveal-l.in,.reveal-r.in{transform:none;}
 }
+/* AGENCY EXPANSION */
+.vmv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:26px 0;}
+.vmv-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px;}
+.vmv-card i{color:var(--accent2);font-size:18px;margin-bottom:8px;display:block;}
+.vmv-card h4{font-size:14px;margin-bottom:6px;letter-spacing:.5px;}
+.vmv-card p{font-size:12.5px;color:var(--muted);line-height:1.6;font-weight:300;}
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:28px;}
+.cat-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:26px 22px;text-decoration:none;color:var(--text);display:block;transition:transform .3s,border-color .3s,box-shadow .3s;position:relative;overflow:hidden;}
+.cat-card::before{content:'';position:absolute;inset:0;background:var(--grad);opacity:0;transition:opacity .3s;z-index:0;}
+.cat-card:hover{transform:translateY(-6px);border-color:transparent;box-shadow:0 16px 40px rgba(58,42,26,.15);}
+.cat-card:hover::before{opacity:.06;}
+.cat-card>*{position:relative;z-index:1;}
+.cat-icon{font-size:28px;margin-bottom:14px;display:block;}
+.cat-card h3{font-size:16px;margin-bottom:8px;}
+.cat-card p{font-size:12.5px;color:var(--muted);line-height:1.7;font-weight:300;margin-bottom:12px;}
+.cat-list{list-style:none;font-size:11.5px;color:var(--muted);line-height:1.9;}
+.cat-list li::before{content:'\2022';color:var(--accent);margin-right:6px;}
+.cat-more{font-family:var(--mono);font-size:11px;color:var(--accent);letter-spacing:.5px;display:inline-flex;align-items:center;gap:6px;margin-top:10px;}
+.industry-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px;}
+.industry-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:22px 16px;text-align:center;transition:transform .3s,border-color .3s;}
+.industry-card:hover{transform:translateY(-4px);border-color:var(--accent2);}
+.industry-card i{font-size:22px;color:var(--accent2);margin-bottom:10px;display:block;}
+.industry-card h4{font-size:13px;margin-bottom:4px;}
+.industry-card p{font-size:11px;color:var(--muted);font-weight:300;line-height:1.5;}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px;}
+.why-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;}
+.why-card .why-num{font-family:var(--mono);font-size:11px;color:var(--dim);letter-spacing:2px;margin-bottom:10px;}
+.why-card i{font-size:20px;color:var(--accent);margin-bottom:10px;display:block;}
+.why-card h4{font-size:15px;margin-bottom:8px;}
+.why-card p{font-size:12.5px;color:var(--muted);line-height:1.7;font-weight:300;}
+.tech-strip{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px;}
+.tech-pill{background:var(--card);border:1px solid var(--border);border-radius:30px;padding:9px 18px;font-size:12px;font-family:var(--mono);display:inline-flex;align-items:center;gap:8px;}
+.tech-pill i{color:var(--accent2);}
+.cs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px;}
+.cs-card{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;}
+.cs-head{padding:20px 22px 0;}
+.cs-tag2{font-family:var(--mono);font-size:10px;color:var(--accent2);letter-spacing:2px;text-transform:uppercase;}
+.cs-card h4{font-size:17px;margin:8px 0 12px;}
+.cs-body{padding:0 22px 20px;flex:1;display:flex;flex-direction:column;gap:10px;}
+.cs-row{font-size:12px;line-height:1.6;color:var(--muted);font-weight:300;}
+.cs-row b{color:var(--text);font-weight:600;display:block;font-size:11px;letter-spacing:.5px;text-transform:uppercase;margin-bottom:2px;}
+.cs-result{background:var(--bg3);border-radius:8px;padding:10px 14px;font-size:12.5px;color:var(--text);margin-top:auto;}
+.faq-wrap{max-width:760px;margin-top:36px;}
+.faq-item{border-bottom:1px solid var(--border);padding:18px 0;}
+.faq-q{display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-weight:600;font-size:14.5px;}
+.faq-q i{color:var(--accent);transition:transform .3s;}
+.faq-item.open .faq-q i{transform:rotate(45deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease;font-size:13px;color:var(--muted);line-height:1.75;font-weight:300;}
+.faq-item.open .faq-a{max-height:220px;padding-top:10px;}
+.res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px;}
+.res-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:22px;}
+.res-tag{font-family:var(--mono);font-size:10px;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;display:block;}
+.res-card h4{font-size:15px;margin-bottom:10px;line-height:1.4;}
+.res-card p{font-size:12.5px;color:var(--muted);line-height:1.7;font-weight:300;}
+.svc-detail-icon2{font-size:26px;margin-bottom:10px;}
+@media(max-width:1024px){.cat-grid,.industry-grid{grid-template-columns:repeat(2,1fr);}.why-grid,.cs-grid,.res-grid,.vmv-grid{grid-template-columns:1fr;}}
+@media(max-width:600px){.cat-grid,.industry-grid{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -333,9 +390,11 @@ footer{background-color:#1b1512;background-image:var(--watermark-dark);backgroun
   <ul class="nav-links" id="navLinks">
     <li><a href="#about" onclick="showHome()">About</a></li>
     <li><a href="#services" onclick="showHome()">Services</a></li>
-    <li><a href="#proof" onclick="showHome()">Project Proof</a></li>
+    <li><a href="#industries" onclick="showHome()">Industries</a></li>
     <li><a href="#portfolio" onclick="showHome()">Portfolio</a></li>
+    <li><a href="#case-studies" onclick="showHome()">Case Studies</a></li>
     <li><a href="#reviews" onclick="showHome()">Reviews</a></li>
+    <li><a href="#faq" onclick="showHome()">FAQ</a></li>
     <li><a href="#contact" onclick="showHome()">Contact</a></li>
   </ul>
   <a href="#contact" class="nav-cta" onclick="showHome()">Hire Me</a>
@@ -348,16 +407,16 @@ footer{background-color:#1b1512;background-image:var(--watermark-dark);backgroun
 <section class="hero" id="home">
   <div class="hero-left">
     <div class="eyebrow reveal-l"><div class="pulse-dot"></div> Available for new projects</div>
-    <h1 class="reveal-l" style="transition-delay:.1s">Shopify Stores<br><span class="grad-text">That Convert.</span>That Impress.</h1>
-    <p class="hero-sub reveal-l" style="transition-delay:.2s">I design and build high-performance Shopify stores for entrepreneurs and brands worldwide. From first pixel to launch day.</p>
+    <h1 class="reveal-l" style="transition-delay:.1s">eCommerce Stores<br><span class="grad-text">That Convert.</span>Brands That Grow.</h1>
+    <p class="hero-sub reveal-l" style="transition-delay:.2s">A complete digital agency for eCommerce development, digital marketing, creative design, and eBook publishing. From first pixel to first sale, and every campaign after.</p>
     <div class="hero-btns reveal-l" style="transition-delay:.3s">
       <a href="#portfolio" class="btn-glow"><i class="fas fa-briefcase"></i> View My Work</a>
-      <a href="#contact" class="btn-ghost">Get a Free Quote</a>
+      <a href="#contact" class="btn-ghost">Book a Free Consultation</a>
     </div>
     <div class="hero-stats reveal-l" style="transition-delay:.4s">
       <div><div class="hs-num">20<sup>+</sup></div><div class="hs-label">Stores Built</div></div>
       <div><div class="hs-num">50<sup>+</sup></div><div class="hs-label">Happy Clients</div></div>
-      <div><div class="hs-num">100<sup>%</sup></div><div class="hs-label">Satisfaction</div></div>
+      <div><div class="hs-num" id="statCounter">4</div><div class="hs-label">Service Pillars</div></div>
     </div>
   </div>
   <div class="hero-right reveal-r" style="transition-delay:.2s">
@@ -384,18 +443,23 @@ footer{background-color:#1b1512;background-image:var(--watermark-dark);backgroun
       <div class="img-badge"><span class="img-badge-num">BSc</span><span class="img-badge-lbl">Comp. Science</span></div>
     </div>
     <div class="about-content reveal-r" style="transition-delay:.15s">
-      <div class="s-tag">Who I Am</div>
+      <div class="s-tag">Who We Are</div>
       <h2>The Mind Behind <span>Talented Scholar Digital</span></h2>
-      <p class="story-p">I am the founder of <strong style="color:var(--accent)">Talented Scholar Digital</strong>, a Shopify design and development brand built from a genuine passion for e-commerce and technology. My journey started with a deep curiosity about how the digital world works and how businesses can truly thrive online.</p>
-      <p class="story-p">In 2024, I proudly graduated with a <strong style="color:var(--accent2)">Bachelor of Science in Computer Science</strong> from the prestigious <strong style="color:var(--accent2)">University of Ilorin</strong>, one of Nigeria's foremost academic institutions. Four years of discipline, sleepless nights, and a commitment to excellence that I carry into every single project today.</p>
-      <p class="story-p">Armed with that foundation, I turned my focus to e-commerce. I discovered that thousands of talented entrepreneurs had incredible products but were being held back by poor online stores. I made it my mission to fix that by building Shopify stores that are not just stunning, but strategically designed to convert visitors into buyers.</p>
-      <div class="collab-note"><strong>Collaboration note:</strong> Several stores in my portfolio were delivered in partnership with established Shopify Partner agencies as part of my ongoing professional growth. I actively collaborate with high-level Shopify professionals worldwide, because great work is often built together.</div>
+      <p class="story-p">Talented Scholar Digital was founded by <strong style="color:var(--accent)">Fawaz</strong>, an eCommerce specialist and digital solutions strategist. What started as a Shopify development practice has grown into a complete eCommerce and digital solutions agency, helping brands build, optimize, market, and scale their entire online presence.</p>
+      <p class="story-p">In 2024, Fawaz graduated with a <strong style="color:var(--accent2)">Bachelor of Science in Computer Science</strong> from the prestigious <strong style="color:var(--accent2)">University of Ilorin</strong>, one of Nigeria's foremost academic institutions. That technical foundation, combined with years of hands-on experience across multiple agencies, shapes how every project is planned and delivered today.</p>
+      <p class="story-p">Along the way, Fawaz has worked across different agency environments and currently collaborates with <strong style="color:var(--accent2)">Zenthrop Agency</strong> on select client engagements, bringing an extra layer of creative and strategic firepower to larger projects. This network of collaboration means clients get the personal attention of a dedicated specialist backed by the capacity of a wider team.</p>
+      <div class="collab-note"><strong>Collaboration note:</strong> Several stores in this portfolio were delivered in partnership with established Shopify Partner agencies and with Zenthrop Agency as part of ongoing professional growth. Great work is often built together.</div>
+      <div class="vmv-grid">
+        <div class="vmv-card"><i class="fas fa-eye"></i><h4>Vision</h4><p>To be the go-to digital partner for businesses that want to build, market, and scale a real online presence, not just a website.</p></div>
+        <div class="vmv-card"><i class="fas fa-bullseye"></i><h4>Mission</h4><p>To combine eCommerce development, marketing, creative design, and content into one dependable growth engine for every client.</p></div>
+        <div class="vmv-card"><i class="fas fa-heart"></i><h4>Values</h4><p>Honest communication, strategic thinking, and craftsmanship in every deliverable, from a single product page to a full brand launch.</p></div>
+      </div>
       <div class="certs">
         <div class="cert"><i class="fas fa-graduation-cap" style="color:var(--accent3)"></i> BSc Computer Science, Unilorin 2024</div>
-        <div class="cert"><i class="fas fa-store" style="color:var(--accent)"></i> Shopify Store Developer</div>
+        <div class="cert"><i class="fas fa-store" style="color:var(--accent)"></i> eCommerce Strategist &amp; Developer</div>
         <div class="cert"><i class="fas fa-code" style="color:var(--accent2)"></i> Full-Stack Web Developer</div>
-        <div class="cert"><i class="fas fa-handshake" style="color:var(--accent3)"></i> Shopify Partner Collaborator</div>
-        <div class="cert"><i class="fas fa-mobile-alt" style="color:var(--accent)"></i> Mobile-First Specialist</div>
+        <div class="cert"><i class="fas fa-handshake" style="color:var(--accent3)"></i> Zenthrop Agency Collaborator</div>
+        <div class="cert"><i class="fas fa-mobile-alt" style="color:var(--accent)"></i> Digital Marketing &amp; Growth</div>
       </div>
     </div>
   </div>
@@ -403,7 +467,34 @@ footer{background-color:#1b1512;background-image:var(--watermark-dark);backgroun
 
 <!-- SERVICES -->
 <section class="sec sec-light" id="services">
-  <div class="reveal"><div class="s-tag">What I Do</div><h2 class="s-title">Services I Offer</h2><p class="s-sub">Everything you need to build, scale, and grow a Shopify store that works hard for your business.</p></div>
+  <div class="reveal"><div class="s-tag">What We Do</div><h2 class="s-title">A Complete Digital Growth Agency</h2><p class="s-sub">eCommerce development, digital marketing, creative design, and eBook publishing, under one roof.</p></div>
+  <div class="cat-grid reveal">
+    <a href="#" onclick="openService('svcd-store-setup-and-launch');return false;" class="cat-card">
+      <span class="cat-icon">&#128722;</span><h3>eCommerce Solutions</h3>
+      <p>Shopify, WooCommerce, BigCommerce, and Wix builds, redesigns, migrations, and conversion optimization.</p>
+      <ul class="cat-list"><li>Custom online stores</li><li>Store redesign &amp; migration</li><li>Speed &amp; product optimization</li></ul>
+      <span class="cat-more">Explore eCommerce <i class="fas fa-arrow-right"></i></span>
+    </a>
+    <a href="#" onclick="openService('svcd-seo');return false;" class="cat-card">
+      <span class="cat-icon">&#128200;</span><h3>Digital Marketing</h3>
+      <p>Traffic and demand generation that turns store visits into real, repeatable revenue.</p>
+      <ul class="cat-list"><li>SEO &amp; Google Ads</li><li>Social &amp; email marketing</li><li>Content &amp; branding strategy</li></ul>
+      <span class="cat-more">Explore Marketing <i class="fas fa-arrow-right"></i></span>
+    </a>
+    <a href="#" onclick="openService('svcd-graphic-design');return false;" class="cat-card">
+      <span class="cat-icon">&#127912;</span><h3>Creative Services</h3>
+      <p>Visual identity and motion content that makes a brand instantly recognizable.</p>
+      <ul class="cat-list"><li>Brand &amp; product design</li><li>Video &amp; motion graphics</li><li>Promotional video content</li></ul>
+      <span class="cat-more">Explore Creative <i class="fas fa-arrow-right"></i></span>
+    </a>
+    <a href="#" onclick="openService('svcd-ebook');return false;" class="cat-card">
+      <span class="cat-icon">&#128218;</span><h3>eBook Solutions</h3>
+      <p>From manuscript to marketplace: writing, design, and publishing support for authors and brands.</p>
+      <ul class="cat-list"><li>Writing &amp; ghostwriting</li><li>Editing, formatting &amp; covers</li><li>Amazon KDP &amp; marketing</li></ul>
+      <span class="cat-more">Explore eBooks <i class="fas fa-arrow-right"></i></span>
+    </a>
+  </div>
+  <div class="reveal" style="margin-top:8px;"><div class="s-tag">Shopify Specialty</div><h2 class="s-title" style="font-size:26px;">Shopify Services, In Detail</h2><p class="s-sub">The core of the practice: everything you need to build, scale, and grow a Shopify store that works hard for your business.</p></div>
   <div class="svc-grid reveal" style="transition-delay:.1s">
     <a href="#" onclick="openService('svcd-store-setup-and-launch');return false;" class="svc"><div class="svc-num">01</div><span class="svc-icon">&#128717;</span><h3>Store Setup and Launch</h3><p>Full Shopify setup from scratch: domain, theme, products, collections, and payment gateways all configured and ready to sell.</p><span class="svc-more">Learn more <i class="fas fa-arrow-right"></i></span></a>
     <a href="#" onclick="openService('svcd-theme-design-and-customization');return false;" class="svc"><div class="svc-num">02</div><span class="svc-icon">&#127912;</span><h3>Theme Design and Customization</h3><p>Custom pixel-perfect themes tailored to your brand. No templates. Every store is completely unique to you.</p><span class="svc-more">Learn more <i class="fas fa-arrow-right"></i></span></a>
@@ -736,6 +827,53 @@ footer{background-color:#1b1512;background-image:var(--watermark-dark);backgroun
   <div class="stat-b"><div class="stat-n">100%</div><div class="stat-l">Satisfaction</div></div>
   <div class="stat-b"><div class="stat-n">3yrs</div><div class="stat-l">Experience</div></div>
 </div>
+
+<!-- INDUSTRIES -->
+<section class="sec sec-light" id="industries">
+  <div class="reveal"><div class="s-tag">Who We Help</div><h2 class="s-title">Industries We Serve</h2><p class="s-sub">Across sectors, the goal is the same: a store and brand that actually sells.</p></div>
+  <div class="industry-grid reveal">
+    <div class="industry-card"><i class="fas fa-tshirt"></i><h4>Fashion &amp; Apparel</h4><p>Footwear, streetwear, and boutique clothing brands.</p></div>
+    <div class="industry-card"><i class="fas fa-spa"></i><h4>Beauty &amp; Wellness</h4><p>Skincare, cosmetics, and personal-care stores.</p></div>
+    <div class="industry-card"><i class="fas fa-utensils"></i><h4>Food &amp; Beverage</h4><p>Bakeries, snack brands, and specialty food shops.</p></div>
+    <div class="industry-card"><i class="fas fa-running"></i><h4>Sports &amp; Fitness</h4><p>Gear, apparel, and community-driven fitness brands.</p></div>
+    <div class="industry-card"><i class="fas fa-home"></i><h4>Home &amp; Lifestyle</h4><p>Décor, furniture, and lifestyle product brands.</p></div>
+    <div class="industry-card"><i class="fas fa-book-open"></i><h4>Authors &amp; Publishers</h4><p>eBook writing, formatting, and KDP publishing.</p></div>
+    <div class="industry-card"><i class="fas fa-briefcase"></i><h4>Professional Services</h4><p>Coaches, consultants, and service-based brands.</p></div>
+    <div class="industry-card"><i class="fas fa-store"></i><h4>General Retail</h4><p>Multi-category stores scaling from local to global.</p></div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="sec sec-dark">
+  <div class="reveal"><div class="s-tag">Why Talented Scholar Digital</div><h2 class="s-title">Why Choose Us</h2><p class="s-sub">A dedicated specialist with the strategy, technical depth, and network to back it up.</p></div>
+  <div class="why-grid reveal">
+    <div class="why-card"><div class="why-num">01</div><i class="fas fa-layer-group"></i><h4>One Team, Every Discipline</h4><p>eCommerce development, marketing, creative, and eBook publishing under one point of contact, no juggling multiple vendors.</p></div>
+    <div class="why-card"><div class="why-num">02</div><i class="fas fa-code"></i><h4>Technical Foundation</h4><p>A Computer Science background means every build is engineered properly, not just styled to look good.</p></div>
+    <div class="why-card"><div class="why-num">03</div><i class="fas fa-people-arrows"></i><h4>Agency-Level Collaboration</h4><p>Partnerships with Zenthrop Agency and other Shopify Partners bring extra capacity to larger projects.</p></div>
+    <div class="why-card"><div class="why-num">04</div><i class="fas fa-bullseye"></i><h4>Strategy Before Pixels</h4><p>Every project starts with your business goals, not a template, so the work is built to convert.</p></div>
+    <div class="why-card"><div class="why-num">05</div><i class="fas fa-comments"></i><h4>Transparent Communication</h4><p>Clear timelines, honest scoping, and no disappearing after the invoice is paid.</p></div>
+    <div class="why-card"><div class="why-num">06</div><i class="fas fa-headset"></i><h4>Support After Launch</h4><p>Stores and campaigns are monitored after go-live, not abandoned the day they ship.</p></div>
+  </div>
+</section>
+
+<!-- TECHNOLOGIES -->
+<section class="sec sec-light">
+  <div class="reveal"><div class="s-tag">Tools of the Trade</div><h2 class="s-title">Technologies We Use</h2><p class="s-sub">The platforms and tools behind every build and campaign.</p></div>
+  <div class="tech-strip reveal">
+    <span class="tech-pill"><i class="fab fa-shopify"></i> Shopify</span>
+    <span class="tech-pill"><i class="fab fa-wordpress"></i> WooCommerce</span>
+    <span class="tech-pill"><i class="fas fa-shopping-cart"></i> BigCommerce</span>
+    <span class="tech-pill"><i class="fab fa-wix"></i> Wix eCommerce</span>
+    <span class="tech-pill"><i class="fab fa-google"></i> Google Ads &amp; Analytics</span>
+    <span class="tech-pill"><i class="fas fa-envelope-open-text"></i> Klaviyo</span>
+    <span class="tech-pill"><i class="fab fa-meta"></i> Meta Ads</span>
+    <span class="tech-pill"><i class="fas fa-search"></i> SEO Tooling</span>
+    <span class="tech-pill"><i class="fab fa-figma"></i> Figma</span>
+    <span class="tech-pill"><i class="fas fa-palette"></i> Adobe Creative Suite</span>
+    <span class="tech-pill"><i class="fab fa-amazon"></i> Amazon KDP</span>
+    <span class="tech-pill"><i class="fab fa-html5"></i> Liquid &amp; Custom Code</span>
+  </div>
+</section>
 
 <!-- RECENT WORK / PROOF -->
 <section class="sec sec-light" id="proof">
@@ -1352,13 +1490,82 @@ footer{background-color:#1b1512;background-image:var(--watermark-dark);backgroun
   <div style="text-align:center;margin-top:28px;"><a href="#" onclick="showSubpage('reviewsPage');return false;" class="btn-ghost">View All 51 Reviews</a></div>
 </section>
 
+<!-- CASE STUDIES -->
+<section class="sec sec-light" id="case-studies">
+  <div class="reveal"><div class="s-tag">Project Deep Dives</div><h2 class="s-title">Case Studies</h2><p class="s-sub">A closer look at the challenge, process, and outcome behind a few recent projects.</p></div>
+  <div class="cs-grid reveal">
+    <div class="cs-card">
+      <div class="cs-head"><span class="cs-tag2">eCommerce Build</span><h4>RunTribe</h4></div>
+      <div class="cs-body">
+        <div class="cs-row"><b>Challenge</b>A running-gear brand needed a store built from scratch that could also handle event registrations for community runs.</div>
+        <div class="cs-row"><b>Solution</b>A custom Shopify build with a bespoke event-registration flow layered on top of the standard product catalog.</div>
+        <div class="cs-row"><b>Process</b>Discovery, architecture planning, custom section development, and full device testing before launch.</div>
+        <div class="cs-row"><b>Tools Used</b>Shopify, custom Liquid sections, Klaviyo for launch emails.</div>
+        <div class="cs-result"><i class="fas fa-star"></i> Result: a single store that sells product and manages event sign-ups without a second platform.</div>
+      </div>
+    </div>
+    <div class="cs-card">
+      <div class="cs-head"><span class="cs-tag2">Theme &amp; Brand</span><h4>Tsonga</h4></div>
+      <div class="cs-body">
+        <div class="cs-row"><b>Challenge</b>A premium footwear brand expanding into Australia needed a theme that matched a higher-end market without losing brand identity.</div>
+        <div class="cs-row"><b>Solution</b>A full custom theme with tailored collection pages and a localised shopping experience for the new market.</div>
+        <div class="cs-row"><b>Process</b>Brand audit, wireframing, custom theme development, and staged review rounds with the client.</div>
+        <div class="cs-row"><b>Tools Used</b>Shopify, Figma for design, custom theme development.</div>
+        <div class="cs-result"><i class="fas fa-star"></i> Result: a distinct, market-appropriate storefront ready for a new region without rebuilding from scratch.</div>
+      </div>
+    </div>
+    <div class="cs-card">
+      <div class="cs-head"><span class="cs-tag2">Speed Optimization</span><h4>Multiple Client Stores</h4></div>
+      <div class="cs-body">
+        <div class="cs-row"><b>Challenge</b>Several existing stores were losing visitors to slow load times caused by oversized images and conflicting apps.</div>
+        <div class="cs-row"><b>Solution</b>A full performance audit, image compression, script cleanup, and Core Web Vitals improvements.</div>
+        <div class="cs-row"><b>Process</b>Baseline audit, bottleneck diagnosis, optimization pass, and a before-and-after report for each store.</div>
+        <div class="cs-row"><b>Tools Used</b>Shopify theme code, image compression tooling, Core Web Vitals reporting.</div>
+        <div class="cs-result"><i class="fas fa-star"></i> Result: load times cut significantly across every optimized store, with measurable gains in conversion behavior.</div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:32px;"><a href="#portfolio" class="btn-ghost">See the Full Portfolio</a></div>
+</section>
+
+<!-- FAQ -->
+<section class="sec sec-dark" id="faq">
+  <div class="reveal"><div class="s-tag">Common Questions</div><h2 class="s-title">Frequently Asked Questions</h2><p class="s-sub">Straight answers to the questions clients ask most before starting a project.</p></div>
+  <div class="faq-wrap reveal">
+    <div class="faq-item" onclick="this.classList.toggle('open')">
+      <div class="faq-q">Which eCommerce platforms do you work with?<i class="fas fa-plus"></i></div>
+      <div class="faq-a">Shopify is the core specialty, but the agency also builds and supports WooCommerce, BigCommerce, and Wix eCommerce stores, along with custom builds where needed.</div>
+    </div>
+    <div class="faq-item" onclick="this.classList.toggle('open')">
+      <div class="faq-q">Do you only build stores, or do you handle marketing too?<i class="fas fa-plus"></i></div>
+      <div class="faq-a">Both. Alongside store builds, the agency offers SEO, Google Ads, social and email marketing, and content strategy, so a store isn't left without traffic after launch.</div>
+    </div>
+    <div class="faq-item" onclick="this.classList.toggle('open')">
+      <div class="faq-q">How long does a typical Shopify build take?<i class="fas fa-plus"></i></div>
+      <div class="faq-a">Most builds take between 2 and 6 weeks depending on scope, from a simple store setup to a fully custom theme with advanced app integrations.</div>
+    </div>
+    <div class="faq-item" onclick="this.classList.toggle('open')">
+      <div class="faq-q">Can you migrate my existing store to Shopify?<i class="fas fa-plus"></i></div>
+      <div class="faq-a">Yes. Migrations from WooCommerce, Wix, or BigCommerce are handled with full data preservation and redirect mapping to protect existing SEO rankings.</div>
+    </div>
+    <div class="faq-item" onclick="this.classList.toggle('open')">
+      <div class="faq-q">Do you offer eBook writing and publishing services?<i class="fas fa-plus"></i></div>
+      <div class="faq-a">Yes. This covers writing or ghostwriting, editing, formatting, cover design, and publishing support on Amazon KDP and other marketplaces.</div>
+    </div>
+    <div class="faq-item" onclick="this.classList.toggle('open')">
+      <div class="faq-q">How do I get started?<i class="fas fa-plus"></i></div>
+      <div class="faq-a">Fill in the enquiry form below or book a free consultation call. A short discovery conversation is the first step on every project.</div>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section class="sec sec-light" id="contact">
-  <div class="reveal"><div class="s-tag">Get In Touch</div><h2 class="s-title">Let's Build Your Store</h2><p class="s-sub">Ready to start? Reach out and I will get back to you within 24 hours.</p></div>
+  <div class="reveal"><div class="s-tag">Get In Touch</div><h2 class="s-title">Let's Build, Market, and Grow Your Brand</h2><p class="s-sub">Ready to start? Book a free consultation or send an enquiry, and I will get back to you within 24 hours.</p></div>
   <div class="contact-grid">
     <div class="contact-info reveal-l" style="transition-delay:.1s">
       <h3>Connect With Me</h3>
-      <p>Available for Shopify projects of all sizes: new stores, redesigns, migrations, and ongoing development. Let's talk.</p>
+      <p>Available for eCommerce builds, digital marketing, creative work, and eBook projects of all sizes, from a single service to a full brand launch. Let's talk.</p>
       <div class="c-links">
         <a href="mailto:talentedscholardigital@gmail.com" class="c-link"><div class="c-ico c-ico-em"><i class="fas fa-envelope"></i></div><div class="c-link-text"><strong>Email</strong><span>talentedscholardigital@gmail.com</span></div><i class="fas fa-chevron-right chevron"></i></a>
       </div>
@@ -1422,6 +1629,21 @@ footer{background-color:#1b1512;background-image:var(--watermark-dark);backgroun
               <option>Store Maintenance &amp; Ongoing Support</option>
               <option>Complete Store Design &amp; Development</option>
               <option>Full Store Redesign</option>
+              <option>WooCommerce / BigCommerce / Wix Store Build</option>
+              <option>SEO Services</option>
+              <option>Google Ads Management</option>
+              <option>Social Media Marketing</option>
+              <option>Email Marketing (beyond Klaviyo setup)</option>
+              <option>Content Marketing &amp; Branding Strategy</option>
+              <option>Brand Identity &amp; Logo Design</option>
+              <option>Product / Packaging Design</option>
+              <option>Video Editing &amp; Promotional Videos</option>
+              <option>Motion Graphics</option>
+              <option>eBook Writing / Ghostwriting</option>
+              <option>eBook Editing &amp; Formatting</option>
+              <option>eBook Cover Design</option>
+              <option>Amazon KDP Publishing Support</option>
+              <option>eBook Marketing &amp; Author Branding</option>
               <option>Other</option>
             </select>
           </div>
@@ -2364,11 +2586,11 @@ footer{background-color:#1b1512;background-image:var(--watermark-dark);backgroun
 <section class="sec sec-light" style="padding-bottom:10px;">
   <div class="page-header">
     <a href="#" onclick="showHome();return false;" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
-    <div class="s-tag" style="justify-content:center;">What I Do</div>
+    <div class="s-tag" style="justify-content:center;">What We Do</div>
     <h2 class="s-title">Services, In Detail</h2>
-    <p class="s-sub">Scope, process, and recent work for each service I offer.</p>
+    <p class="s-sub">Scope, process, and recent work across eCommerce, marketing, creative, and eBook services.</p>
   </div>
-  <div class="svc-toc"><a href="#" onclick="scrollToService('svcd-store-setup-and-launch');return false;">Store Setup and Launch</a><a href="#" onclick="scrollToService('svcd-theme-design-and-customization');return false;">Theme Design and Customization</a><a href="#" onclick="scrollToService('svcd-performance-optimization');return false;">Store Speed Optimization</a><a href="#" onclick="scrollToService('svcd-mobile-first-development');return false;">Responsive Mobile Optimization</a><a href="#" onclick="scrollToService('svcd-app-integration');return false;">Shopify Apps Installation and Configuration</a><a href="#" onclick="scrollToService('svcd-store-migration');return false;">Shopify Migration</a></div>
+  <div class="svc-toc"><a href="#" onclick="scrollToService('svcd-store-setup-and-launch');return false;">Store Setup and Launch</a><a href="#" onclick="scrollToService('svcd-theme-design-and-customization');return false;">Theme Design and Customization</a><a href="#" onclick="scrollToService('svcd-performance-optimization');return false;">Store Speed Optimization</a><a href="#" onclick="scrollToService('svcd-mobile-first-development');return false;">Responsive Mobile Optimization</a><a href="#" onclick="scrollToService('svcd-app-integration');return false;">Shopify Apps Installation and Configuration</a><a href="#" onclick="scrollToService('svcd-store-migration');return false;">Shopify Migration</a><a href="#" onclick="scrollToService('svcd-seo');return false;">Digital Marketing</a><a href="#" onclick="scrollToService('svcd-graphic-design');return false;">Creative Services</a><a href="#" onclick="scrollToService('svcd-ebook');return false;">eBook Solutions</a></div>
 </section>
 <section class="sec sec-light" style="padding-top:0;">
 <div class="svc-detail" id="svcd-store-setup-and-launch" style="">
@@ -2477,6 +2699,60 @@ footer{background-color:#1b1512;background-image:var(--watermark-dark);backgroun
     </div>
   </div>
   <div class="svc-detail-recent"><i class="fas fa-star"></i> Store migrations completed to date have moved with zero lost orders and no meaningful drop in search rankings post-launch.</div>
+  <a href="#" onclick="showHome();setTimeout(function(){document.getElementById('contact').scrollIntoView();},50);return false;" class="btn-glow" style="margin-top:22px;display:inline-flex;"><i class="fas fa-paper-plane"></i> Enquire About This Service</a>
+</div>
+<div class="svc-detail" id="svcd-seo" style="border-top:1px solid var(--border);">
+  <div class="svc-detail-icon">&#128200;</div>
+  <h2>Digital Marketing</h2>
+  <p class="svc-detail-summary">SEO, paid ads, social, and email marketing that turn traffic into revenue.</p>
+  <p class="svc-detail-overview">A great store still needs people to walk through the door. The marketing side of the agency covers everything from organic search visibility to paid acquisition and lifecycle email, all built around one goal: turning visitors into repeat customers, not just one-time clicks.</p>
+  <div class="svc-detail-grid">
+    <div>
+      <h4>What's Included</h4>
+      <ul class="svc-detail-list"><li>Search Engine Optimization (SEO) for products and collections</li><li>Google Ads and paid search campaign setup</li><li>Social media marketing and content calendars</li><li>Email marketing flows (welcome, abandoned cart, win-back)</li><li>Content marketing and blog strategy</li><li>Brand positioning and messaging strategy</li></ul>
+    </div>
+    <div>
+      <h4>My Process</h4>
+      <ol class="svc-detail-list svc-detail-ol"><li>Audit current traffic and channels</li><li>Define target audience and keywords</li><li>Build campaigns, content, and email flows</li><li>Launch and monitor performance</li><li>Report on results and optimize monthly</li></ol>
+    </div>
+  </div>
+  <div class="svc-detail-recent"><i class="fas fa-star"></i> Marketing engagements are scoped around measurable outcomes: traffic, conversion rate, and return on ad spend, not vanity metrics.</div>
+  <a href="#" onclick="showHome();setTimeout(function(){document.getElementById('contact').scrollIntoView();},50);return false;" class="btn-glow" style="margin-top:22px;display:inline-flex;"><i class="fas fa-paper-plane"></i> Enquire About This Service</a>
+</div>
+<div class="svc-detail" id="svcd-graphic-design" style="border-top:1px solid var(--border);">
+  <div class="svc-detail-icon">&#127912;</div>
+  <h2>Creative Services</h2>
+  <p class="svc-detail-summary">Brand identity, product design, and video content that make a brand recognizable.</p>
+  <p class="svc-detail-overview">Consistent visuals build trust before a single word is read. The creative side of the agency covers logo and brand identity, product and packaging design, and video content, from short promotional clips to motion graphics for social and ad placements, all working from a single, consistent brand system.</p>
+  <div class="svc-detail-grid">
+    <div>
+      <h4>What's Included</h4>
+      <ul class="svc-detail-list"><li>Logo and brand identity design</li><li>Product design and packaging mockups</li><li>Social media graphics and templates</li><li>Video editing and promotional videos</li><li>Motion graphics for ads and social content</li><li>Brand style guide and asset library</li></ul>
+    </div>
+    <div>
+      <h4>My Process</h4>
+      <ol class="svc-detail-list svc-detail-ol"><li>Discovery call on brand personality and goals</li><li>Moodboarding and concept direction</li><li>Design and revision rounds</li><li>Final asset delivery and style guide</li><li>Optional ongoing content production</li></ol>
+    </div>
+  </div>
+  <div class="svc-detail-recent"><i class="fas fa-star"></i> Creative work is delivered in partnership with Zenthrop Agency on larger campaigns, combining design and motion expertise under one roof.</div>
+  <a href="#" onclick="showHome();setTimeout(function(){document.getElementById('contact').scrollIntoView();},50);return false;" class="btn-glow" style="margin-top:22px;display:inline-flex;"><i class="fas fa-paper-plane"></i> Enquire About This Service</a>
+</div>
+<div class="svc-detail" id="svcd-ebook" style="border-top:1px solid var(--border);">
+  <div class="svc-detail-icon">&#128218;</div>
+  <h2>eBook Solutions</h2>
+  <p class="svc-detail-summary">From manuscript to marketplace: writing, design, and publishing support.</p>
+  <p class="svc-detail-overview">Whether it's a lead-magnet eBook for a store or a full-length title for Amazon, this service covers the full path from a rough idea to a published, marketed book: writing or ghostwriting, editing, formatting, cover design, and getting it live on Amazon KDP and beyond.</p>
+  <div class="svc-detail-grid">
+    <div>
+      <h4>What's Included</h4>
+      <ul class="svc-detail-list"><li>eBook writing and ghostwriting</li><li>Professional editing and proofreading</li><li>Manuscript formatting for Kindle and print</li><li>Custom cover design</li><li>Amazon KDP publishing setup and support</li><li>eBook marketing and author branding</li></ul>
+    </div>
+    <div>
+      <h4>My Process</h4>
+      <ol class="svc-detail-list svc-detail-ol"><li>Discovery call on topic, audience, and goals</li><li>Outline and writing or ghostwriting phase</li><li>Editing, proofreading, and formatting</li><li>Cover design and final proofing</li><li>Publishing to Amazon KDP and other stores</li><li>Optional launch marketing support</li></ol>
+    </div>
+  </div>
+  <div class="svc-detail-recent"><i class="fas fa-star"></i> eBook projects range from short lead-magnet guides used inside Shopify stores to full-length titles published on Amazon KDP.</div>
   <a href="#" onclick="showHome();setTimeout(function(){document.getElementById('contact').scrollIntoView();},50);return false;" class="btn-glow" style="margin-top:22px;display:inline-flex;"><i class="fas fa-paper-plane"></i> Enquire About This Service</a>
 </div>
 </section>
