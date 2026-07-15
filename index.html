@@ -193,11 +193,12 @@ nav.scrolled{background:rgba(251,249,245,.92);backdrop-filter:blur(20px);border-
 .proof-zoom-hint{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(20,15,10,0);opacity:0;transition:opacity .25s,background .25s;}
 .proof-item:hover .proof-zoom-hint{opacity:1;background:rgba(20,15,10,.28);}
 .proof-zoom-hint i{color:#fff;font-size:16px;background:rgba(20,15,10,.55);padding:12px;border-radius:50%;}
-.lightbox{position:fixed;inset:0;background:rgba(18,13,10,.93);display:none;align-items:center;justify-content:center;z-index:3000;padding:5vh 5vw;}
+.lightbox{position:fixed;inset:0;background:rgba(18,13,10,.93);display:none;align-items:flex-start;justify-content:center;z-index:3000;padding:80px 5vw 60px;overflow-y:auto;-webkit-overflow-scrolling:touch;}
 .lightbox.open{display:flex;}
-.lightbox img{max-width:100%;max-height:90vh;border-radius:10px;box-shadow:0 30px 80px rgba(0,0,0,.5);}
-.lightbox-close{position:fixed;top:22px;right:28px;color:#fff;font-size:30px;line-height:1;cursor:pointer;background:rgba(255,255,255,.1);width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background .2s;}
+.lightbox img{width:100%;max-width:900px;height:auto;border-radius:10px;box-shadow:0 30px 80px rgba(0,0,0,.5);display:block;}
+.lightbox-close{position:fixed;top:22px;right:28px;color:#fff;font-size:30px;line-height:1;cursor:pointer;background:rgba(255,255,255,.1);width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background .2s;z-index:3001;}
 .lightbox-close:hover{background:rgba(255,255,255,.2);}
+.lightbox-hint{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.6);font-size:11.5px;font-family:var(--mono);letter-spacing:.5px;background:rgba(255,255,255,.08);padding:7px 16px;border-radius:50px;z-index:3001;pointer-events:none;transition:opacity .5s ease;}
 .reviews-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:32px;flex-wrap:wrap;gap:16px;}
 .year-filter{display:flex;gap:8px;flex-wrap:wrap;}
 .yf-btn{background:var(--card);border:1.5px solid var(--border);border-radius:50px;padding:8px 16px;color:var(--muted);font-size:12px;font-weight:600;font-family:var(--sans);cursor:pointer;transition:all .2s;}
@@ -962,6 +963,7 @@ footer{background-color:#1b1512;background-image:var(--watermark-dark);backgroun
 <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
   <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
   <img id="lightboxImg" src="" alt="Full size preview"/>
+  <span class="lightbox-hint" id="lightboxHint"><i class="fas fa-arrows-up-down"></i> Scroll to see full image</span>
 </div>
 
 <!-- ALL 50 REVIEWS -->
@@ -3163,6 +3165,13 @@ function openLightbox(el){
   var lb = document.getElementById('lightbox');
   document.getElementById('lightboxImg').src = img.src;
   lb.classList.add('open');
+  lb.scrollTop = 0;
+  var hint = document.getElementById('lightboxHint');
+  if(hint){
+    hint.style.opacity = '1';
+    clearTimeout(window._lbHintTimer);
+    window._lbHintTimer = setTimeout(function(){ hint.style.opacity = '0'; }, 2500);
+  }
 }
 function closeLightbox(e){
   if(e.target.id==='lightbox' || e.target.classList.contains('lightbox-close')){
@@ -3317,5 +3326,19 @@ document.addEventListener('keydown', function(e){
   });
 })();
 </script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a5735d04d0b791d472ffc69/1jtiakelf';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 </html>
